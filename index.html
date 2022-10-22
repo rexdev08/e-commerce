@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deluxe Sofa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+
+  <header class="header">
+    <nav class="header__nav">
+      <div id="header-menu" class="header__menu">
+        <a id="sofas" href="#products" class="header__link">Sofas</a>
+        <a id="veladores" href="#products" class="header__link">Veladores</a>
+      </div>
+      <button id="btn-menu" class="header__button">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-list" viewBox="0 0 16 16">
+          <path fill-rule="evenodd"
+            d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+        </svg></button>
+      <p class="header__p">Sofa <span class="header__span">Deluxe</span></p>
+
+      <div class="header__cart-wrapper">
+        <span id="header-counter" class="header__counter">0</span>
+        <button id="btn-shopping-cart" class="header__button header__button--shopping-cart">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="white" class="bi bi-cart" viewBox="0 0 16 16">
+            <path
+              d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5zM3.102 4l1.313 7h8.17l1.313-7H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4zm-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2z" />
+          </svg></button>
+      </div>
+
+
+    </nav>
+  </header>
+
+
+  <main>
+    <div id="modal" class="modal ">
+
+      <div class="modal__wrapper">
+
+        <div class="modal__header">
+          <h2 class="modal__h2">Carro</h2>
+          <button id="btn-close" class="modal__button modal__button--close"><svg xmlns="http://www.w3.org/2000/svg"
+              fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+              <path
+                d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8 2.146 2.854Z" />
+            </svg></button>
+        </div>
+
+        <!-- <hr> -->
+
+
+
+        <div id="modal-items" class="modal__items">
+
+          <!-- <div class="item">
+            <div class="item__split item__split--left">
+              <img src="./assets/sofas/sofa-1.jpeg" alt="producto" class="item__image">
+              <span class="item__btn-delete">eliminar</span>
+            </div>
+            <div class="item__split item__split--right">
+              <h3 class="item__description">Sofa modular deluxe 300</h3>
+              <span class="item__price">300.000</span>
+              <div class="item__buttons">
+
+                <button class="item__button item__button--left">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-dash-lg" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2 8a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11A.5.5 0 0 1 2 8Z" />
+                  </svg></button>
+                <span id="quantity" class="item__quantity">0</span>
+                <button class="item__button item__button--right"><svg xmlns="http://www.w3.org/2000/svg"
+                    fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                    <path
+                      d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+                  </svg></button>
+              </div>
+            </div>
+          </div> -->
+
+
+
+
+        </div>
+
+      </div>
+
+
+
+
+      <div class="modal__footer">
+        <div class="modal__text-wrapper">
+          <h3 class="modal__h3">costo total:</h3>
+          <span id="total"class="modal__span">0</span>
+        </div>
+        <button class="modal__button modal__button--buy">Comprar</button>
+      </div>
+    </div>
+
+
+    <section class="hero">
+      <div class="hero__div">
+        <h1 class="hero__h1">COLECCION 2023</h1>
+        <a href="#products"><button class="hero__button">Ver Ahora</button></a>
+      </div>
+    </section>
+
+    <section class="products" id="products">
+
+      <h1 class="products__h1">Productos</h1>
+      <div id="products-container" class="products__container">
+
+        <!-- <div class="item" id="${id}">
+          <img loading="lazy" src="${image}" alt="" class="item__image">
+          <h3 class="item__h3">${product}</h3>
+          <span class="item__span">$${price}</span>
+          <button class="item__button">anadir al carrito</button>
+        </div> -->
+
+      </div>
+
+    </section>
+
+
+
+
+  </main>
+
+
+
+  <script src="./scripts.js" type="module"></script>
+</body>
+
+</html>
